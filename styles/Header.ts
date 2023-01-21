@@ -4,6 +4,9 @@ export const HeaderContainer = styled.header`
   background-color: #e7ecee;
   position: sticky;
   top: 0;
+  z-index: 50;
+  font-family: 'Poppins', sans-serif;
+  color: #232428;
 `;
 
 export const HeaderIcon = styled.i`
@@ -22,7 +25,6 @@ export const HeaderIcon = styled.i`
     background-image: linear-gradient(to right, #ec4899, #8b5cf6);
     top: -4px;
     right: -4px;
-    z-index: 50;
     height: 16px;
     width: 16px;
     font-size: 10px;
@@ -97,8 +99,9 @@ export const HeaderListNav = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 16px;
-  margin-left: 32px;
+  gap: 40px;
+  font-size: 17px;
+  /* margin-left: 22px; */
 
   @media (max-width: 768px) {
     display: none;
