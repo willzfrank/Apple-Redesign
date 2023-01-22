@@ -12,9 +12,8 @@ export const ButtonComponent = styled.button<IButtonProps>`
   box-sizing: border-box;
   display: inline-flex;
   border: none;
-
   width: ${(props) => (props.width ? props.width : 'auto')};
-  padding: ${(props) => (props.padding ? props.padding : '17px 45px')};
+  padding: ${(props) => (props.padding ? props.padding : '12px 32px')};
   cursor: pointer;
   display: inline-flex;
   align-items: center;

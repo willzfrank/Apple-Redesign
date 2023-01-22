@@ -20,6 +20,9 @@ export default function Home() {
       <main>
         <Landing />
       </main>
+      <section>
+        <h1>New Promos</h1>
+      </section>
     </>
   );
 }

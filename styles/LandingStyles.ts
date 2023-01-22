@@ -1,8 +1,19 @@
 import styled from 'styled-components';
 
 export const LandingContainer = styled.section`
+  margin-left: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  margin: 0 auto;
+  max-width: 1350px;
+  padding: 0 32px;
+  height: 100vh;
+  /* landingcontainerstyling */
+
   h1 {
-    margin-top: 12px;
     font-size: 48px;
     font-weight: 600;
     letter-spacing: 0.025em;
@@ -30,21 +41,9 @@ export const LandingContainer = styled.section`
     }
   }
 
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: 24px;
-  position: sticky;
-  top: 0;
-  margin: 0 auto;
-  max-width: 1350px;
-  padding: 0 32px;
-  height: 100vh;
-
   .landingPage_btnContainer {
     display: flex;
     align-items: center;
-    /* justify-content: space-between; */
     gap: 32px;
   }
 
@@ -82,7 +81,7 @@ export const LandingContainer = styled.section`
     /* z-index: 100; */
 
     @media (min-width: 768px) {
-      display: block;
+      display: inline-block;
     }
 
     @media (min-width: 768px) and (max-width: 1224px) {

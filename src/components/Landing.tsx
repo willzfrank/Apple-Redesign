@@ -24,7 +24,7 @@ function Landing({}: Props) {
           src="/assets/iphone.png"
           alt="iphone"
           width={600}
-          height={650}
+          height={600}
           className="landing_image"
         />
       </div>

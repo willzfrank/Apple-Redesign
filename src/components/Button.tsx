@@ -33,7 +33,14 @@ function Button({ width, padding, onClick, noIcon, loading, title }: Props) {
           </svg>
         </div>
       )}
-      {loading ? 'Loading...' : title}
+      {loading ? (
+        <div className="loading-container">
+          <div className="loading"></div>
+          <div id="loading-text">Loading...</div>
+        </div>
+      ) : (
+        title
+      )}
     </ButtonComponent>
   );
 }
