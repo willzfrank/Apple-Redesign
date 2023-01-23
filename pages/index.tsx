@@ -1,11 +1,9 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import { Inter } from '@next/font/google';
-import styles from '@/styles/Home.module.css';
 import Header from '@/src/components/Header';
 import Landing from '@/src/components/Landing';
-
-const inter = Inter({ subsets: ['latin'] });
+import { PromoContainer } from '@/styles/IndexStyles';
+import { GetServerSideProps } from 'next';
 
 export default function Home() {
   return (
@@ -20,9 +18,17 @@ export default function Home() {
       <main>
         <Landing />
       </main>
-      <section>
-        <h1>New Promos</h1>
-      </section>
+      <PromoContainer>
+        <div>
+          <h1>New Promos</h1>
+        </div>
+      </PromoContainer>
     </>
   );
 }
+
+export const getServerSideProps: GetServerSideProps = async () => {
+  return {
+    props: {},
+  };
+};
